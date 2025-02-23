@@ -1,0 +1,16 @@
+<!-- c) Elaborar um programa que leia o valor de um jantar  
+calcule e informe o valor da taxa do garçom (10%) e o 
+valor total a ser pago. -->
+
+
+<meta charset="UTF-8">
+
+<script>
+    var valorJantar = Number(prompt("Digite o valor do jantar R$: "));
+    var taxaGarçom = valorJantar * 0.10;
+    var total = valorJantar + taxaGarçom;
+    alert("-Resumo do jantar-" + "\n" +
+    "Valor do jantar: R$ " + valorJantar.toFixed(2) + "\n" + 
+    "Taxa do garçom: R$ " + taxaGarçom.toFixed(2) + "\n" +
+    "Total a pagar: R$ " + total.toFixed(2));
+</script>
