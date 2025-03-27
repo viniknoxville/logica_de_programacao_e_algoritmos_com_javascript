@@ -1,0 +1,34 @@
+<!-- 
+d) Elaborar um programa que leia um número e exiba estrelas
+na página, em linhas diferentes. A cada nova linha o número
+de estrelas deve ser incrementado. Obs: caso você informe um 
+valor alto, as linhas podem ultrapassar o tamanho da imagem e se
+alinhar á margem a margem esquerda da página. Para evitar que 
+isso aconteça crie uma nova classe no arquivo estilos.css, que 
+defina uma flutuação á direita para essa imagem 
+-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Exercício 4.d</title>
+</head>
+
+<body>
+    <img src="img/exerc.jpg" alt="Exercícios" class="direita">
+    <h1>Fábrica de Estrelas 2</h1>
+    
+    <p>Número de Linhas: <input type="text" id="inLinhas"></p>
+    
+    <input type="button" value="Criar Estrelas" id="btCriar">
+    
+    <pre id="outResposta"></pre>
+    <script src="js/resp4_d.js"></script>
+</body>
+
+</html>
