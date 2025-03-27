@@ -10,19 +10,17 @@ function verificarNumeroPrimo() {
         return;
     }
 
-    var numDivisores = 0; //declara e inicializa o contator
-
-    // pecorre todos os possiveis divisores do número
-    for (var i = 1; i <= numero; i++) {
-        //verifica se i (1,2,3...) é divisor do numero
+    var temDivisor = 0; // declara e inicia a variável flag
+    
+    // pecorre os possiveis divisores do número
+    for (var i = 2; i <= numero / 2; i++) {
         if (numero % i == 0) {
-            numDivisores++; // se é, incrementa contator;
+            temDivisor = 1; // muda o flag
+            break; // sai da repetição
         }
     }
-
-
-    // se possui apenas 2 divisores, é primo
-    if (numDivisores == 2) {
+    // se num for maior que 1 e não possui divisor
+    if (numero > 1 && !temDivisor) {
         outResposta.textContent = numero + " É primo";
     } else {
         outResposta.textContent = numero + " Não é primo";
