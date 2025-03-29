@@ -25,6 +25,7 @@ function apostarNumero() {
     // se aposta do jogador for igual ao número sorteado
     if (numero == sorteado) {
         alert("Parabens você acertou");
+        showFireworks();
         // troca status dos botões
         btApostar.disabled = true;
         btJogar.className = "exibe";
@@ -60,6 +61,21 @@ function apostarNumero() {
 
 var btApostar = document.getElementById("btApostar");
 btApostar.addEventListener("click", apostarNumero);
+
+function showFireworks() {
+    for (let i = 0; i < 10; i++) {
+        let firework = document.createElement("div");
+        firework.classList.add("firework");
+        document.body.appendChild(firework);
+
+        firework.style.left = Math.random() * 100 + "vw";
+        firework.style.top = Math.random() * 100 + "vh";
+
+        setTimeout(() => {
+            firework.remove();
+        }, 1000);
+    }
+}
 
 function jogarNovamente (){
     location.reload(); // recarrega a página

@@ -11,7 +11,7 @@ img.alta {
 }
 
 h1 {
-    border-bottom-style: inset ;
+    border-bottom-style: inset;
 }
 
 pre {
@@ -19,7 +19,7 @@ pre {
 }
 
 .fonteAzul {
-    color:blue;
+    color: blue;
 }
 
 .oculta {
@@ -32,4 +32,28 @@ pre {
 
 .italico {
     font-style: italic;
+}
+
+@keyframes fireworks {
+    0% {
+        transform: scale(0);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1.5);
+        opacity: 0;
+    }
+}
+
+.firework {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    background-color: yellow;
+    border-radius: 50%;
+    box-shadow: 0 0 10px yellow, 0 0 20px red, 0 0 30px orange;
+    animation: fireworks 1s ease-out forwards;
 }
