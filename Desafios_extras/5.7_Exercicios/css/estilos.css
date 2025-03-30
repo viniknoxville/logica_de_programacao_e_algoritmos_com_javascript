@@ -1,0 +1,26 @@
+
+h1 {
+    border-bottom-style: inset;
+}
+
+img.normal { 
+    float: left; 
+    height: 300px; 
+    width: 300px; }
+
+img.alta { 
+    float: left; 
+    height: 420px; 
+    width: 300px; 
+}
+
+img.direita { 
+    float: right; 
+    height: 300px; 
+    width: 300px; 
+}
+
+pre { 
+    font-size: 1.2em; 
+}
+
