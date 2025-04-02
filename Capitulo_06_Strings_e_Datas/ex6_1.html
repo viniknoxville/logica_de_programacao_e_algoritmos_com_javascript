@@ -1,0 +1,18 @@
+<!-- 6.1 - Programa que lê um anúncio e informa número 
+de palavras 
+-->
+
+<script>
+    var anuncio = prompt("Anúncio: ");       // lê o anúncio
+    var tam = anuncio.length;                // obtém o tamanho
+    var numPalavras = 0;                     // inicializa o contador 
+
+    for (var i = 0; i < tam; i++) {  // pecorre o vetor
+        if (anuncio.charAt(i) == " ") {      // se encontrou um espaço
+            numPalavras++;                  // incrementa contador
+        }
+    }
+    // exibe anúncio e número de palavras (que é o nº de espaços + 1)
+alert("Anuncio: " + anuncio + "\nNº Palavras: " + (numPalavras + 1));
+
+</script>
